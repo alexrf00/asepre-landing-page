@@ -1,27 +1,27 @@
-import { Navbar } from "@/components/navbar"
+import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
-import { StatsSection } from "@/components/stats-section"
 import { AboutSection } from "@/components/about-section"
+import { MissionVisionSection } from "@/components/mission-vision-section"
 import { ServicesSection } from "@/components/services-section"
-import { WhyUsSection } from "@/components/why-us-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
+import { LocationSection } from "@/components/location-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
-import { FloatingContact } from "@/components/floating-contact"
+import { FloatingCTA } from "@/components/floating-cta"
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-background noise-overlay">
-      <Navbar />
+    <main className="min-h-screen bg-background">
+      <Header />
       <HeroSection />
-      <StatsSection />
       <AboutSection />
+      <MissionVisionSection />
       <ServicesSection />
-      <WhyUsSection />
       <TestimonialsSection />
+      <LocationSection />
       <ContactSection />
       <Footer />
-      <FloatingContact />
+      <FloatingCTA />
     </main>
   )
 }
