@@ -1,18 +1,19 @@
 import type React from "react"
-import type { Metadata, Viewport } from "next"
-import { Inter, Playfair_Display } from "next/font/google"
+import type { Metadata } from "next"
+import { Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const _inter = Inter({ subsets: ["latin"] })
-const _playfair = Playfair_Display({ subsets: ["latin"] })
+const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ASEPRE – Seguridad que Inspira Confianza.",
+  title: "ASEPRE – Agentes de Seguridad Preventiva | Protección 24/7",
   description:
-    "Elite security services in Dominican Republic. 16+ years of excellence in private security, executive protection, and tactical surveillance.",
+    "Más de 15 años ofreciendo vigilancia, patrullaje y protección ejecutiva. Servicios de seguridad privada confiables y profesionales en República Dominicana.",
+  keywords:
+    "seguridad privada, vigilancia, patrullaje, protección ejecutiva, guardaespaldas, seguridad preventiva, República Dominicana",
   generator: "v0.app",
-  keywords: ["seguridad", "vigilancia", "patrullaje", "escoltas", "protección ejecutiva", "República Dominicana"],
   icons: {
     icon: [
       {
@@ -32,10 +33,6 @@ export const metadata: Metadata = {
   },
 }
 
-export const viewport: Viewport = {
-  themeColor: "#141414",
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className="font-sans antialiased">
+      <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

@@ -1,96 +1,125 @@
 import Image from "next/image"
-import { CheckCircle2 } from "lucide-react"
+import { Shield, Award, Clock, CheckCircle } from "lucide-react"
+import { GoldDivider } from "@/components/gold-divider"
 
 const features = [
-  "Personal altamente capacitado y certificado",
-  "Protocolos de seguridad actualizados",
-  "Tecnología de monitoreo avanzada",
-  "Respuesta inmediata ante incidentes",
-  "Cobertura en toda República Dominicana",
-  "Servicio personalizado según necesidades",
+  {
+    icon: Shield,
+    title: "Prevención",
+    description: "Enfoque proactivo para anticipar y mitigar riesgos",
+  },
+  {
+    icon: Award,
+    title: "Disciplina Operativa",
+    description: "Personal altamente entrenado y comprometido",
+  },
+  {
+    icon: Clock,
+    title: "Respuesta Inmediata",
+    description: "Atención rápida ante cualquier eventualidad",
+  },
 ]
 
 export function AboutSection() {
   return (
-    <section id="nosotros" className="py-32 relative overflow-hidden">
-      {/* Background accent */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none" />
+    <section
+      id="nosotros"
+      className="relative overflow-hidden py-20 md:py-32 bg-gradient-to-br from-background via-background to-primary/30"
+    >
+      {/* Background pattern */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/50" />
+      <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-amber-500/40 to-transparent" />
+      <div className="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-amber-500/40 to-transparent" />
 
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left - Image/Visual */}
-          <div className="relative">
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
-              <Image
-                src="/certifications.jpg"
-                alt="ASEPRE Security Professional"
-                fill
-                className="object-cover"
-              />
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-            </div>
+      <div className="container relative z-10 mx-auto px-4">
+        {/* Section header */}
+        <div className="mb-16 text-center">
+          <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-amber-500">
+            Quiénes Somos
+          </span>
+          <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+            <span className="text-balance">Excelencia en Seguridad</span>
+          </h2>
+          <GoldDivider className="mt-6" />
+        </div>
 
-            {/* Floating card */}
-            <div className="absolute -bottom-8 -right-8 bg-card border border-border rounded-2xl p-6 shadow-2xl max-w-xs">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary">16</span>
-                </div>
-                <div>
-                  <p className="text-foreground font-semibold">Años de</p>
-                  <p className="text-muted-foreground text-sm">Excelencia</p>
-                </div>
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          {/* Content */}
+          <div className="space-y-6">
+            <div className="relative rounded-lg border border-gray-700 bg-gray-800/80 p-8 shadow-sm">
+              <div className="absolute -top-3 left-8">
+                <span className="rounded bg-amber-500 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+                  Desde 2009
+                </span>
               </div>
-              <p className="text-sm text-muted-foreground">
-                Desde 2009 brindando tranquilidad a familias y empresas en todo el país.
+              <p className="text-pretty text-lg leading-relaxed text-gray-300">
+                <strong className="text-white">Asepre – Agentes de Seguridad Preventiva</strong> es una empresa fundada
+                en 2009 especializada en soluciones de vigilancia, patrullaje y protección ejecutiva. Nuestro enfoque se
+                basa en la prevención, la disciplina operativa y la respuesta inmediata.
+              </p>
+              <p className="mt-4 text-pretty text-lg leading-relaxed text-gray-300">
+                Ofrecemos servicios confiables, discretos y adaptados a las necesidades de cada cliente residencial,
+                comercial o institucional.
               </p>
             </div>
 
-            {/* Decorative elements */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 border border-primary/30 rounded-2xl" />
-            <div className="absolute top-8 left-8 w-24 h-24 bg-primary/10 rounded-2xl" />
-          </div>
-
-          {/* Right - Content */}
-          <div className="space-y-8">
-            <div>
-              <span className="text-primary font-semibold tracking-widest uppercase text-sm">Sobre Nosotros</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mt-4 leading-tight text-balance">
-                Seguridad que inspira confianza
-              </h2>
-            </div>
-
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">ASEPRE – Agentes de Seguridad Preventiva</strong> es una empresa
-              fundada en 2009, especializada en soluciones integrales de vigilancia, patrullaje y protección ejecutiva.
-              Nuestro enfoque se basa en la prevención, la disciplina operativa y la respuesta inmediata.
-            </p>
-
-            <p className="text-muted-foreground leading-relaxed">
-              Ofrecemos servicios confiables, discretos y adaptados a las necesidades de cada cliente —ya sea
-              residencial, comercial o institucional— con los más altos estándares de profesionalismo.
-            </p>
-
-            {/* Features list */}
-            <div className="grid sm:grid-cols-2 gap-4 pt-4">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                  <span className="text-foreground text-sm">{feature}</span>
+            {/* Values list */}
+            <div className="space-y-4">
+              {[
+                "Profesionalismo en cada servicio",
+                "Ética y confidencialidad absoluta",
+                "Personal certificado y entrenado",
+                "Cobertura completa 24/7",
+              ].map((value, index) => (
+                <div key={index} className="flex items-center gap-3 text-gray-300">
+                  <CheckCircle className="h-5 w-5 flex-shrink-0 text-amber-500" />
+                  <span>{value}</span>
                 </div>
               ))}
             </div>
+          </div>
 
-            {/* CTA */}
-            <div className="pt-4">
-              <a
-                href="#contacto"
-                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold transition-colors group"
-              >
-                Conoce más sobre nosotros
-                <span className="group-hover:translate-x-1 transition-transform">→</span>
-              </a>
+          <div className="space-y-6">
+            {/* Owner certification photo */}
+            <div className="relative overflow-hidden rounded-lg border-2 border-amber-500/30 bg-gray-800 shadow-lg">
+              <div className="absolute -top-3 right-8 z-10">
+                <span className="rounded bg-red-700 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+                  Certificación Oficial
+                </span>
+              </div>
+              <Image
+                src="/images/certifications.jpg"
+                alt="Propietaria de ASEPRE recibiendo certificación oficial"
+                width={600}
+                height={450}
+                className="w-full object-cover"
+              />
+              <div className="bg-gradient-to-t from-gray-900/90 to-transparent p-4">
+                <p className="text-sm text-white">
+                  Reconocimiento oficial por excelencia en servicios de seguridad preventiva
+                </p>
+              </div>
+            </div>
+
+            {/* Features grid */}
+            <div className="grid gap-4">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="group relative overflow-hidden rounded-lg border border-gray-700 bg-gray-800/80 p-5 shadow-sm transition-all hover:border-amber-500/50 hover:shadow-md"
+                >
+                  <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-red-700/10 transition-transform group-hover:scale-150" />
+                  <div className="relative flex items-start gap-4">
+                    <div className="rounded-lg bg-red-700/20 p-3">
+                      <feature.icon className="h-5 w-5 text-red-500" />
+                    </div>
+                    <div>
+                      <h3 className="mb-1 text-base font-semibold text-white">{feature.title}</h3>
+                      <p className="text-sm text-gray-400">{feature.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
