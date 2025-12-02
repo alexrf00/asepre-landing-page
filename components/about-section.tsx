@@ -115,7 +115,7 @@ export function AboutSection() {
                     </div>
                     <div>
                       <h3 className="mb-1 text-base font-semibold text-white">{feature.title}</h3>
-                      <p className="text-sm text-gray-400">{feature.description}</p>
+                      <p className="text-sm text-gray-200">{feature.description}</p>
                     </div>
                   </div>
                 </div>
