@@ -52,7 +52,7 @@ export function LocationSection() {
                 </div>
                 <div>
                   <h3 className="mb-2 font-semibold text-white">Dirección</h3>
-                  <p className="text-gray-300">
+<p className="text-gray-100">
                     Vanessa Ramírez Faña, Esquina Proyecto I,
                     <br />
                     VANESSA RAMÍREZ FAÑA, ESQUINA PROYECTO I, CERROS DE GURABO II
@@ -68,7 +68,7 @@ export function LocationSection() {
                 </div>
                 <div>
                   <h3 className="mb-2 font-semibold text-white">Horario de Atención</h3>
-                  <p className="text-gray-300">
+                  <p className="text-gray-100">
                     Lunes a Viernes: 8:00 AM - 6:00 PM
                     <br />
                     Emergencias: 24/7
@@ -84,7 +84,7 @@ export function LocationSection() {
                 </div>
                 <div>
                   <h3 className="mb-2 font-semibold text-white">Contacto Directo</h3>
-                  <p className="text-gray-300">
+                  <p className="text-gray-100">
                     Teléfono:{" "}
                     <a href="tel:8095028501" className="text-amber-500 hover:underline">
                       (809) 502-8501
@@ -106,7 +106,7 @@ export function LocationSection() {
                 </div>
                 <div>
                   <h3 className="mb-2 font-semibold text-white">Cobertura</h3>
-                  <p className="text-gray-300">Santiago y zona norte de República Dominicana</p>
+                  <p className="text-gray-100">Santiago y zona norte de República Dominicana</p>
                 </div>
               </div>
             </div>

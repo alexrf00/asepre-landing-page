@@ -42,7 +42,7 @@ export function MissionVisionSection() {
                 <h3 className="text-2xl font-bold text-gray-900 md:text-3xl">Misión</h3>
               </div>
               <div className="h-px w-16 bg-amber-500" />
-              <p className="mt-6 text-pretty text-lg leading-relaxed text-gray-600">
+<p className="mt-6 text-pretty text-lg leading-relaxed text-gray-700">
                 Brindar servicios de seguridad preventiva con altos estándares de profesionalismo, disciplina y ética,
                 protegiendo vidas, propiedades y comunidades.
               </p>
@@ -67,7 +67,7 @@ export function MissionVisionSection() {
                 <h3 className="text-2xl font-bold text-gray-900 md:text-3xl">Visión</h3>
               </div>
               <div className="h-px w-16 bg-amber-500" />
-              <p className="mt-6 text-pretty text-lg leading-relaxed text-gray-600">
+<p className="mt-6 text-pretty text-lg leading-relaxed text-gray-700">
                 Ser la empresa de seguridad referente en la región, reconocida por nuestra calidad operativa, excelencia
                 en el servicio y confiabilidad absoluta.
               </p>

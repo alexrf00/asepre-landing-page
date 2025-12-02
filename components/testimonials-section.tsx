@@ -69,7 +69,7 @@ export function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <blockquote className="mb-6 text-lg text-gray-700">"{testimonial.quote}"</blockquote>
+              <blockquote className="mb-6 text-lg text-gray-800">"{testimonial.quote}"</blockquote>
 
               {/* Author */}
               <div className="flex items-center gap-4">
@@ -78,7 +78,7 @@ export function TestimonialsSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.author}</div>
-                  <div className="text-sm text-gray-500">{testimonial.role}</div>
+                  <div className="text-sm text-gray-600">{testimonial.role}</div>
                 </div>
               </div>
 

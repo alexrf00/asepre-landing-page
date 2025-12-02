@@ -94,7 +94,7 @@ export function ContactSection() {
           <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             <span className="text-balance">Solicite una Cotización</span>
           </h2>
-          <p className="mx-auto max-w-2xl text-pretty text-lg text-gray-300">
+          <p className="mx-auto max-w-2xl text-pretty text-lg text-gray-100">
             Complete el formulario y nos pondremos en contacto con usted a la brevedad
           </p>
           <GoldDivider className="mt-6" />
@@ -109,26 +109,26 @@ export function ContactSection() {
               <div className="space-y-6">
                 <a
                   href="tel:8095028501"
-                  className="flex items-center gap-4 text-gray-300 transition-colors hover:text-amber-500"
+                  className="flex items-center gap-4 text-gray-100 transition-colors hover:text-amber-500"
                 >
                   <div className="rounded-lg bg-red-700/20 p-3">
                     <Phone className="h-5 w-5 text-red-500" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Teléfono</p>
+                    <p className="text-sm text-gray-300">Teléfono</p>
                     <p className="font-semibold text-white">(809) 502-8501</p>
                   </div>
                 </a>
 
                 <a
                   href="mailto:asepre.srl@gmail.com"
-                  className="flex items-center gap-4 text-gray-300 transition-colors hover:text-amber-500"
+                  className="flex items-center gap-4 text-gray-100 transition-colors hover:text-amber-500"
                 >
                   <div className="rounded-lg bg-amber-500/20 p-3">
                     <Mail className="h-5 w-5 text-amber-500" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Email</p>
+                    <p className="text-sm text-gray-300">Email</p>
                     <p className="font-semibold text-white">asepre.srl@gmail.com</p>
                   </div>
                 </a>
@@ -138,7 +138,7 @@ export function ContactSection() {
                     <MapPin className="h-5 w-5 text-red-500" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Dirección</p>
+                    <p className="text-sm text-gray-300">Dirección</p>
                     <p className="font-semibold text-white">VANESSA RAMÍREZ FAÑA, ESQUINA PROYECTO I, CERROS DE GURABO II</p>
                   </div>
                 </div>

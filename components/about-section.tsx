@@ -52,12 +52,12 @@ export function AboutSection() {
                   Desde 2009
                 </span>
               </div>
-              <p className="text-pretty text-lg leading-relaxed text-gray-300">
+              <p className="text-pretty text-lg leading-relaxed text-gray-100">
                 <strong className="text-white">Asepre – Agentes de Seguridad Preventiva</strong> es una empresa fundada
                 en 2009 especializada en soluciones de vigilancia, patrullaje y protección ejecutiva. Nuestro enfoque se
                 basa en la prevención, la disciplina operativa y la respuesta inmediata.
               </p>
-              <p className="mt-4 text-pretty text-lg leading-relaxed text-gray-300">
+              <p className="mt-4 text-pretty text-lg leading-relaxed text-gray-100">
                 Ofrecemos servicios confiables, discretos y adaptados a las necesidades de cada cliente residencial,
                 comercial o institucional.
               </p>
@@ -71,7 +71,7 @@ export function AboutSection() {
                 "Personal certificado y entrenado",
                 "Cobertura completa 24/7",
               ].map((value, index) => (
-                <div key={index} className="flex items-center gap-3 text-gray-300">
+                <div key={index} className="flex items-center gap-3 text-gray-100">
                   <CheckCircle className="h-5 w-5 flex-shrink-0 text-amber-500" />
                   <span>{value}</span>
                 </div>

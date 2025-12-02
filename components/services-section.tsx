@@ -42,7 +42,7 @@ export function ServicesSection() {
           <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             <span className="text-balance">Soluciones de Seguridad</span>
           </h2>
-          <p className="mx-auto max-w-2xl text-pretty text-lg text-gray-300">
+<p className="mx-auto max-w-2xl text-pretty text-lg text-gray-100">
             Servicios especializados diseñados para proteger lo que más importa
           </p>
           <GoldDivider className="mt-6" />
@@ -68,12 +68,12 @@ export function ServicesSection() {
                 <h3 className="mb-4 text-xl font-bold text-white">{service.title}</h3>
 
                 {/* Description */}
-                <p className="mb-6 text-pretty text-gray-300">{service.description}</p>
+<p className="mb-6 text-pretty text-gray-100">{service.description}</p>
 
                 {/* Features */}
                 <ul className="mb-6 space-y-3">
                   {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-2 text-sm text-gray-400">
+<li key={i} className="flex items-center gap-2 text-sm text-gray-200">
                       <div className="h-1.5 w-1.5 rounded-full bg-amber-500" />
                       {feature}
                     </li>
@@ -84,7 +84,7 @@ export function ServicesSection() {
                 <Button
                   asChild
                   variant="ghost"
-                  className="group/btn w-full justify-between border border-gray-600 text-gray-300 hover:border-amber-500/50 hover:bg-amber-500/10 hover:text-white"
+className="group/btn w-full justify-between border border-gray-500 text-gray-100 hover:border-amber-500/50 hover:bg-amber-500/10 hover:text-white"
                 >
                   <a href="#contacto">
                     Solicitar Información
