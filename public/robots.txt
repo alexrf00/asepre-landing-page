@@ -1,11 +1,11 @@
 # Robots.txt for ASEPRE - Agentes de Seguridad Preventiva
-# https://asepre.com
+# https://agentesdeseguridadpreventiva.com
 
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://asepre.com/sitemap.xml
+Sitemap: https://agentesdeseguridadpreventiva.com/sitemap.xml
 
 # Disallow admin and private paths
 Disallow: /api/
